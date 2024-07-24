@@ -1,6 +1,9 @@
+// src/components/VoiceNotesAI.tsx
+
 import React from 'react';
 import { AppProvider } from '../context/AppContext';
 import Header from './Header';
+import ControlButtons from './ControlButtons';
 import RecordingList from './RecordingList';
 import AudioPlayer from './AudioPlayer';
 import TranscriptionView from './TranscriptionView';
@@ -11,6 +14,7 @@ const VoiceNotesAI: React.FC = () => {
         <AppProvider>
             <div className="container mx-auto p-4">
                 <Header />
+                <ControlButtons />
                 <div className="flex flex-col md:flex-row gap-4">
                     <div className="w-full md:w-1/2">
                         <RecordingList />
