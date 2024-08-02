@@ -13,7 +13,7 @@ const RecordingItem: React.FC<RecordingItemProps> = ({ id, duration, date }) => 
     const { setSelectedRecording } = useAppContext();
 
     const handleClick = () => {
-        setSelectedRecording({ id, duration, date });
+        setSelectedRecording({ id, duration, date, audioBlob: null });
     };
 
     return (
